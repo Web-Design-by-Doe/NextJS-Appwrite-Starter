@@ -1,10 +1,18 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { buttonVariants } from '@/components';
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center gap-8 min-h-svh">
+      <Image
+        src="/images/logo-placeholder.webp"
+        alt="Logo"
+        width={2000}
+        height={2000}
+        className="w-38 h-38"
+      />
       <h1 className="text-4xl font-bold">
         Welcome to the Next.JS & Appwrite Starter Template
       </h1>
