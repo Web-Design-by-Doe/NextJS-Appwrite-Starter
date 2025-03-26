@@ -8,15 +8,15 @@ export function AuthContainer({ children }: { children: React.ReactNode }) {
         <div className="flex justify-center gap-2 md:justify-start">
           {/* Insert your logo here */}
           <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-            <div className="bg-foreground  rounded-md p-1">
+            <div>
               <Image
-                src="/images/logo-placeholder.svg"
+                src="/images/logo-placeholder.webp"
                 width={32}
                 height={32}
                 alt="Logo"
               />
             </div>
-            <span>Logo</span>
+            <span>NextWrite</span>
           </Link>
         </div>
         <div className="flex flex-1 justify-center pt-32">
