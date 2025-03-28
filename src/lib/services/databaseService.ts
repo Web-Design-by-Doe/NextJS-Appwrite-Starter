@@ -4,10 +4,10 @@ import { createAdminClient, createSessionClient } from '@/lib';
 
 const collections = [
   {
-    databaseId: '67e0364d002f9f78b186',
-    collectionId: '67e0365700241c03885f',
-    name: 'test',
-  },
+    databaseId: process.env.APPWRITE_DATABASE_ID!, // Database ID in Appwrite
+    collectionId: process.env.APPWRITE_COLLECTION_ID!, // Collection ID in Appwrite
+    name: 'test', // Collection name in Appwrite
+  }, // Add more collections here
 ];
 
 class DatabaseService {
